@@ -6,7 +6,7 @@
  * @author Prawee Wongsa <konkeanweb@gmail.com>
  */
 use yii\widgets\Breadcrumbs;
-use dmstr\widgets\Alert;
+use kartik\alert\AlertBlock;
 ?>
 <div class="content-wrapper">
     <section class="content-header">
@@ -32,7 +32,7 @@ use dmstr\widgets\Alert;
     </section>
 
     <section class="content">
-        <?= Alert::widget() ?>
+        <?= AlertBlock::widget(['delay'=>1000]) ?>
         <?= $content ?>
     </section>
 </div>
