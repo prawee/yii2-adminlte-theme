@@ -30,3 +30,14 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
+'components'=>[
+    ...
+    'view' => [
+        'theme' => [
+            'pathMap' => [
+                '@app/views' => '@vendor/prawee/yii2-adminlte-theme/views'
+            ],
+        ],
+    ],
+    ...
+```  
