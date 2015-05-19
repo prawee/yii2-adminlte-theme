@@ -4,7 +4,9 @@ Theme collections for Yii 2 Web Application
 
 My first repository https://bitbucket.org/prawee/yii2-theme-admin-lte 
 
-Reference resource https://almsaeedstudio.com 
+Reference resource 
+- https://almsaeedstudio.com
+- https://github.com/dmstr/yii2-adminlte-asset 
 
 
 Installation
