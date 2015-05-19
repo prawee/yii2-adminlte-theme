@@ -7,6 +7,7 @@
  */
 use yii\widgets\Breadcrumbs;
 use kartik\alert\AlertBlock;
+use yii\bootstrap\Modal;
 ?>
 <div class="content-wrapper">
     <section class="content-header">
@@ -32,8 +33,13 @@ use kartik\alert\AlertBlock;
     </section>
 
     <section class="content">
-        <?= AlertBlock::widget(['delay'=>1000]) ?>
+        <?= AlertBlock::widget(['delay' => 1000]) ?>
         <?= $content ?>
+        <?php
+        Modal::begin(['id' => 'main-modal']);
+        echo '<div id="main-content-modal"></div>';
+        Modal::end();
+        ?>
     </section>
 </div>
 
