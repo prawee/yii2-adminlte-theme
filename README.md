@@ -12,16 +12,16 @@ Reference resource
 Installation
 ------------
 ```
-php composer.phar require --prefer-dist prawee/yii2-adminlte-theme "*"
+php composer.phar require --prefer-dist prawee/yii2-adminlte-theme "dev-master"
 ```
 
 or add
 
 ```
-"prawee/yii2-adminlte-theme": "*"
+"prawee/yii2-adminlte-theme": "dev-master"
 ```
 
-to the require section of your `composer.json` file.
+to the require-dev section of your `composer.json` file.
 
 
 Usage
