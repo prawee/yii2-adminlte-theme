@@ -1,17 +1,15 @@
 <?php
-
 /**
- * Description of main-login
+ * @link http://www.konkeanweb.com
  * May 19, 2015 12:06:40 PM
+ * @copyright Copyright (c) 2015 served
  * @author Prawee Wongsa <konkeanweb@gmail.com>
+ * @license BSD-3-Clause
  */
-use backend\assets\AppAsset;
+
 use yii\helpers\Html;
-
-/* @var $this \yii\web\View */
-/* @var $content string */
-
-prawee\themes\AdminLteAsset::register($this);
+use prawee\themes\AdminLteAsset;
+AdminLteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
