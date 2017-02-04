@@ -48,6 +48,9 @@ class MenuBlock extends Widget{
     public function renderItems()
     {
         foreach($this->items as $item) {
+            if (empty($item['visible'])) {
+                continue;
+            }
             if (!empty($item['options']['class'])) {
                 Html::addCssClass($item['options'],$this->itemOptions);
             }
