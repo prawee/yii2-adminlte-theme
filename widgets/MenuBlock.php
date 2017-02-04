@@ -65,7 +65,7 @@ class MenuBlock extends Widget{
                 echo Html::a($item['label'],$item['url'],$item['labelOptions']);
             }
             if (!empty($item['block'])) {
-                echo $this->renderItem($item['block']);
+                $this->renderItem($item['block']);
             }
             echo Html::endTag('li');
         }
