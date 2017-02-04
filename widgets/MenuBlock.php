@@ -54,12 +54,15 @@ class MenuBlock extends Widget{
             if (!empty($item['options']['class'])) {
                 Html::addCssClass($item['options'],$this->itemOptions);
             }
-            echo Html::beginTag('li',$item['options']);
-            if (!empty($item['label'])) {
-                echo Html::a($item['label'],$item['url'],[
+            if (empty($item['labelOptions'])) {
+                $item['labelOptions'] = [
                     'class' => 'dropdown-toggle',
                     'data-toggle' => 'dropdown'
-                ]);
+                ];
+            }
+            echo Html::beginTag('li',$item['options']);
+            if (!empty($item['label'])) {
+                echo Html::a($item['label'],$item['url'],$item['labelOptions']);
             }
             if (!empty($item['block'])) {
                 echo $this->renderItem($item['block']);
