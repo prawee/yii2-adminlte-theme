@@ -1,21 +1,15 @@
 <?php
-
 use yii\helpers\Html;
-
-/* @var $this \yii\web\View */
-/* @var $content string */
 if (Yii::$app->controller->action->id === 'login') {
-    echo $this->render(
-        'main-login', ['content' => $content]
-    );
+    echo $this->render('login', ['content' => $content]);
+} else if (Yii::$app->controller->action->id === 'signup') {
+    echo $this->render('signup', ['content' => $content]);
 } else {
-
     if (class_exists('backend\assets\AppAsset')) {
         backend\assets\AppAsset::register($this);
     } else {
         app\assets\AppAsset::register($this);
     }
-
     prawee\themes\AdminLteAsset::register($this);
 
     $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
@@ -34,24 +28,11 @@ if (Yii::$app->controller->action->id === 'login') {
             <?php $this->beginBody() ?>
             <div class="wrapper">
 
-                <?=
-                $this->render(
-                    'header.php', ['directoryAsset' => $directoryAsset]
-                )
-                ?>
+                <?=$this->render('header', ['directoryAsset' => $directoryAsset])?>
 
-                <?=
-                $this->render(
-                    'left.php', ['directoryAsset' => $directoryAsset]
-                )
-                ?>
+                <?=$this->render('left', ['directoryAsset' => $directoryAsset])?>
 
-                <?=
-                $this->render(
-                    'content.php',
-                    ['content' => $content, 'directoryAsset' => $directoryAsset]
-                )
-                ?>
+                <?=$this->render('content',['content' => $content, 'directoryAsset' => $directoryAsset])?>
 
             </div>
 
