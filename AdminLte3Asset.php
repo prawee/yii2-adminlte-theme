@@ -2,7 +2,7 @@
 /**
  * Description of AdminLte3Asset.php
  * Created At 14/02/2020 11:25 AM
- * Author By Prawee Wongsa <prawee.wongsa@allianz.com>
+ * Author By Prawee Wongsa <konkeanweb@gmail.com>
  */
 
 namespace prawee\themes;
