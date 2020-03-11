@@ -1,8 +1,8 @@
 {
     "name": "prawee/yii2-adminlte-theme",
-    "description": "Theme collections for Yii 2 Web Application",
+    "description": "Adminlte V3 Theme collections for Yii 2 Web Application",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","theme","AdminLTE"],
+    "keywords": ["yii2","extension","theme","AdminLTE","V3"],
     "license": "BSD-3-Clause",
     "minimum-stability": "dev",
     "authors": [
@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*",
-        "yiisoft/yii2-bootstrap4": "2.0.8",
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap4": "~2.0.8",
         "almasaeed2010/adminlte": "~3.0",
         "rmrevin/yii2-fontawesome": "3.4.0",
         "kartik-v/yii2-widget-alert": "*"
