@@ -6,7 +6,8 @@
  * action == [login, signup, index(dashboard)]
  */
 
-if (Yii::$app->controller->module->id !== 'app-backend') {
+$moduleList = ['app-backend', 'basic'];
+if (!in_array(Yii::$app->controller->module->id, $moduleList)) {
     echo $this->render('dashboard', ['content' => $content]);
 } else {
     $action = Yii::$app->controller->action->id;
