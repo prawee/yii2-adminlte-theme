@@ -29,7 +29,7 @@ use yii\helpers\Url;
     <ul class="navbar-nav ml-auto">
         <li class="nav-item d-none d-sm-inline-block">
         <?php if ($loggedIn = Yii::$app->user->identity) : ?>
-        <?=Html::beginForm(Url::to(['site/logout'], 'post')?>
+        <?=Html::beginForm(Url::to(['site/logout']), 'post')?>
         <?=Html::submitButton(
             '<i class="fas fa-sign-out-alt"></i> Logout ('.$loggedIn->username.') ',
             ['class' => 'btn btn-link nav-link']
