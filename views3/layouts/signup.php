@@ -19,9 +19,16 @@ $this->beginPage();
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="login-page">
+    <body class="hold-transition login-page">
         <?php $this->beginBody() ?>
-        <?=$content?>
+        <div class="login-box">
+            <div class="login-logo">
+                <b>Signup</b>
+            </div>
+            <div class="card">
+                <?=$content?>
+            </div>
+        </div>
         <?php $this->endBody() ?>
     </body>
 </html>
