@@ -5,7 +5,7 @@
  * Author By Prawee Wongsa <konkeanweb@gmail.com>
  */
 
-namespace prawee\themes;
+namespace prawee\themes\assets;
 
 use yii\web\AssetBundle;
 
