@@ -6,9 +6,9 @@
  */
 
 use yii\bootstrap4\Html;
-use prawee\themes\AdminLte3Asset;
+use prawee\themes\assets\AdminLteAsset;
 
-AdminLte3Asset::register($this);
+AdminLteAsset::register($this);
 $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/docs');
 ?>
 <?php $this->beginPage() ?>

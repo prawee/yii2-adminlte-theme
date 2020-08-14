@@ -6,8 +6,8 @@
  */
 
 use yii\bootstrap4\Html;
-use prawee\themes\AdminLte3Asset;
-AdminLte3Asset::register($this);
+use prawee\themes\AdminLteAsset;
+AdminLteAsset::register($this);
 $this->beginPage();
 ?>
 <!DOCTYPE html>

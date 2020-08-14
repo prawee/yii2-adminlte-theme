@@ -9,7 +9,7 @@ namespace prawee\themes;
 
 use yii\web\AssetBundle;
 
-class AdminLte3Asset extends AssetBundle
+class AdminLteAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/almasaeed2010/adminlte/docs';
     public $css = [

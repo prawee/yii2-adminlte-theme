@@ -1,19 +1,14 @@
-Yii 2 Theme
-===========
+# Backend template for Yii 2 Application + AdminLTE v3 + Bootstrap 4
 
-Theme collections for Yii 2 Web Application
-
-My first repository <https://bitbucket.org/prawee/yii2-theme-admin-lte>
-
-Reference resource
+## Reference resource
 
 - <https://almsaeedstudio.com>
 - <https://github.com/dmstr/yii2-adminlte-asset>
+- <https://bitbucket.org/prawee/yii2-theme-admin-lte>
 
-Installation
-------------
+## Installation
 
-V3
+### Release version
 
 ```terminal
 php composer.phar require --prefer-dist prawee/yii2-adminlte-theme "dev-master"
@@ -25,7 +20,7 @@ or add
 "prawee/yii2-adminlte-theme": "dev-master"
 ```
 
-V2
+### V2 or older
 
 ```terminal
 php composer.phar require --prefer-dist prawee/yii2-adminlte-theme "1.0"
@@ -39,31 +34,7 @@ or add
 
 to the require-dev section of your `composer.json` file.
 
-Usage
------
-
-Once the extension is installed, simply use it in your code by  :
-
-V3
-
-```php
-'components'=>[
-    ...
-    'view' => [
-        'theme' => [
-            'pathMap' => [
-                '@app/views' => '@vendor/prawee/yii2-adminlte-theme/views3'
-            ],
-        ],
-    ],
-    ...
-],
-'params' => [
-    'shortName' => 'PW'
-]
-``` 
-
-V2
+## Usage
 
 ```php
 'components'=>[
@@ -77,4 +48,7 @@ V2
     ],
     ...
 ],
+'params' => [
+    'shortName' => 'PW'
+]
 ```
