@@ -9,6 +9,33 @@
  */
 namespace prawee\themes\widgets;
 
-class Alert {
+use Yii;
+use yii\bootstrap4\Widget;
 
+class Alert extends Widget {
+
+    public function run()
+    {
+        $session = Yii::$app->session;
+        $flashes = $session->getAllFlashes();
+
+        foreach ($flashes as $type => $flash) {
+
+            foreach ((array) $flash as $i => $message) {
+                return $this->view->registerJs("
+                    Swal.mixin({
+                        toast: true,
+                        position: 'top-end',
+                        showConfirmButton: false,
+                        timer: 3000
+                    }).fire({
+                      icon: '".$type."',
+                      title: '  ".Yii::t('app',$message)."',
+                    })"
+                );
+            }
+
+            $session->removeFlash($type);
+        }
+    }
 }
