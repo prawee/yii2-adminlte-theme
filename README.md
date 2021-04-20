@@ -52,3 +52,9 @@ to the require-dev section of your `composer.json` file.
     'shortName' => 'PW'
 ]
 ```
+
+## Developer
+
+```bash
+composer update -vvv
+```
